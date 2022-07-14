@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/assets/favicon.ce72fd1e.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Space Typer</title>
+		
+		<script type="module" crossorigin src="/assets/index.23eb0355.js"></script>
+		<link rel="stylesheet" href="/assets/index.c98fc4dc.css">
+	</head>
+	<body>
+		<div class="preload" id="app">
+			<!-- Render -->
+			<canvas
+				id="background_renderer"
+				class="animateCanv"
+				style="--blur: 0px; --gray: 0"
+			></canvas>
+			<canvas
+				id="particles_renderer"
+				class="animateCanv"
+				style="--blur: 0px; --gray: 0"
+			></canvas>
+			<canvas id="game_renderer" class="animateCanv" style="--blur: 0px; --gray: 0"></canvas>
+
+			<!-- User interface -->
+			<div class="game_ui">
+				<div class="top_bar"></div>
+
+				<div class="bottom_bar">
+					<div class="prompt_container">
+						<div id="PromptBox">
+							<div id="PromptText">Input</div>
+						</div>
+					</div>
+					<div class="menu_container">
+						<div class="menu_left">
+							<div class="menu_item" action="changelog">Test Build</div>
+						</div>
+						<div class="menu_center">
+							<div class="menu_item">Statistics</div>
+							<div class="menu_item" action="settings">Settings</div>
+						</div>
+						<div class="menu_right">
+							<div class="menu_item" action="UwU">UwU</div>
+							<div class="menu_item" action="github">Github</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="changelog" class="changelog_container">
+				<div class="changelog_label">Changelog</div>
+				<div id="changelog_content" class="changelog_content">Fetching Data...</div>
+			</div>
+
+			<div id="statistics" class="statistics_container">uwu</div>
+
+			<div id="settings" class="settings_container">
+				<div class="settings_label">Settings</div>
+				<div class="settings_options_container">X</div>
+				<div class="settings_desc_container">D</div>
+			</div>
+		</div>
+	</body>
+</html>
